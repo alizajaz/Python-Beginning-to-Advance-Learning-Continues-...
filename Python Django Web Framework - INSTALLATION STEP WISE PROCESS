@@ -75,3 +75,75 @@ Not Found: /favicon.ico
 [13/Oct/2023 13:32:44] "GET /favicon.ico HTTP/1.1" 404 2118
 
 Open a new browser window and type 127.0.0.1:8000 in the address bar.
+
+
+
+
+
+*****************************************************************************************************************************************************************************
+
+
+C:\Users\Admin>py -m venv myworld
+
+C:\Users\Admin>myworld\Scripts\activate.bat
+
+(myworld) C:\Users\Admin>py -m pip install Django
+Requirement already satisfied: Django in c:\users\admin\myworld\lib\site-packages (4.2.6)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\admin\myworld\lib\site-packages (from Django) (3.7.2)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\admin\myworld\lib\site-packages (from Django) (0.4.4)
+Requirement already satisfied: tzdata in c:\users\admin\myworld\lib\site-packages (from Django) (2023.3)
+
+(myworld) C:\Users\Admin>cd my_tennis_club
+
+
+(myworld) C:\Users\Admin\my_tennis_club>cd members
+
+
+(myworld) C:\Users\Admin\my_tennis_club\members>py views.py startapp members
+
+
+
+(myworld) C:\Users\Admin\my_tennis_club\members>notepad views.py
+
+(myworld) C:\Users\Admin\my_tennis_club\members>notepad urls.py
+
+
+
+(myworld) C:\Users\Admin\my_tennis_club\members>cd ..
+
+(myworld) C:\Users\Admin\my_tennis_club>py manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+October 13, 2023 - 14:18:51
+Django version 4.2.6, using settings 'my_tennis_club.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+Not Found: /members/
+[13/Oct/2023 14:18:56] "GET /members/ HTTP/1.1" 404 2109
+Not Found: /members/
+[13/Oct/2023 14:18:59] "GET /members/ HTTP/1.1" 404 2109
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
