@@ -1,0 +1,75 @@
+***********************************************Python Django Web Framework - INSTALLATION STEP WISE******************************************************************************
+
+C:\Users\Admin>py -m venv myworld
+
+C:\Users\Admin>myworld\Scripts\activate.bat
+
+(myworld) C:\Users\Admin>py -m pip install Django
+Collecting Django
+  Downloading Django-4.2.6-py3-none-any.whl (8.0 MB)
+     ---------------------------------------- 8.0/8.0 MB 4.6 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.6.0 (from Django)
+  Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting sqlparse>=0.3.1 (from Django)
+  Downloading sqlparse-0.4.4-py3-none-any.whl (41 kB)
+     ---------------------------------------- 41.2/41.2 kB 1.9 MB/s eta 0:00:00
+Collecting tzdata (from Django)
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ---------------------------------------- 341.8/341.8 kB 1.1 MB/s eta 0:00:00
+Installing collected packages: tzdata, sqlparse, asgiref, Django
+Successfully installed Django-4.2.6 asgiref-3.7.2 sqlparse-0.4.4 tzdata-2023.3
+
+[notice] A new release of pip is available: 23.1.2 -> 23.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myworld) C:\Users\Admin>Unix/MacOS:
+'Unix' is not recognized as an internal or external command,
+operable program or batch file.
+
+(myworld) C:\Users\Admin> python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\admin\myworld\lib\site-packages (23.1.2)
+Collecting pip
+  Using cached pip-23.2.1-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.1.2
+    Uninstalling pip-23.1.2:
+      Successfully uninstalled pip-23.1.2
+Successfully installed pip-23.2.1
+
+(myworld) C:\Users\Admin>py -m pip install Django
+Requirement already satisfied: Django in c:\users\admin\myworld\lib\site-packages (4.2.6)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\admin\myworld\lib\site-packages (from Django) (3.7.2)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\admin\myworld\lib\site-packages (from Django) (0.4.4)
+Requirement already satisfied: tzdata in c:\users\admin\myworld\lib\site-packages (from Django) (2023.3)
+
+(myworld) C:\Users\Admin>
+(myworld) C:\Users\Admin>py --version
+Python 3.11.4
+
+(myworld) C:\Users\Admin>django-admin --version
+4.2.6
+
+(myworld) C:\Users\Admin>django-admin startproject my_tennis_club
+
+(myworld) C:\Users\Admin>django-admin startproject my_tennis_club
+CommandError: 'C:\Users\Admin\my_tennis_club' already exists
+
+(myworld) C:\Users\Admin>cd my_tennis_club
+
+(myworld) C:\Users\Admin\my_tennis_club>py manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+October 13, 2023 - 13:31:13
+Django version 4.2.6, using settings 'my_tennis_club.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[13/Oct/2023 13:32:44] "GET / HTTP/1.1" 200 10664
+Not Found: /favicon.ico
+[13/Oct/2023 13:32:44] "GET /favicon.ico HTTP/1.1" 404 2118
